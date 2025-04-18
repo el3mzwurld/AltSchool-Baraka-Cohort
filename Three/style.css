@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap");
+
+:root {
+  --body-bg-color: #ffffff;
+  --txt-color: #737373;
+  --txt-header-color: #000b0a;
+  --form-border-color: #2ec4b6;
+  --form-btn-bg-color: #2ec4b6;
+  --txt--accent: #2ec4b6;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  font-family: "Sofia Sans", sans-serif;
+  background-color: var(--body-bg-color);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.bdy--one {
+  width: 460px;
+  height: 280px;
+  margin-left: 140px;
+  margin-top: 180px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    .container--img {
+      img {
+        width: 77px;
+        height: 80px;
+      }
+    }
+    .container--txt {
+      #title {
+        font-family: sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        margin-right: 5px;
+        letter-spacing: 0px;
+        color: var(--txt-header-color);
+      }
+      #main-1 {
+        font-family: sans-serif;
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 400;
+        margin-top: 5px;
+        letter-spacing: 0px;
+        color: var(--txt-color);
+      }
+      #main-2 {
+        font-family: sans-serif;
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 400;
+        margin-top: 5px;
+        letter-spacing: 0px;
+        color: var(--txt-color);
+        display: none;
+      }
+    }
+  }
+}
+
+.bdy--two {
+  width: 580px;
+  height: 680px;
+  background-color: var(--body-bg-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 60px;
+  margin-left: 80px;
+  margin-right: 20px;
+  flex-wrap: wrap;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    .form {
+      width: 80%;
+      height: 80%;
+      justify-content: center;
+      align-items: center;
+      margin-right: 22px;
+      .form--group {
+        display: flex;
+        flex-direction: row;
+
+        #group {
+          margin-right: 30px;
+          label {
+            font-family: "Sofia Sans", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            margin: 3px 0px;
+          }
+          input {
+            width: 200px;
+            height: 50px;
+            border-radius: 3px;
+            border: 1px solid var(--form-border-color);
+          }
+          select {
+            width: 200px;
+            height: 50px;
+            border-radius: 3px;
+            border-radius: 3px;
+            border: 1px solid var(--form-border-color);
+          }
+        }
+      }
+    }
+    #act-lvl {
+      #group {
+        margin-right: 30px;
+        label {
+          font-family: "Sofia Sans", sans-serif;
+          font-weight: 600;
+          font-size: 14px;
+          margin: 3px 0px;
+        }
+        select {
+          width: 450px;
+        }
+      }
+    }
+    #pw {
+      #group {
+        margin-right: 30px;
+        label {
+          font-family: "Sofia Sans", sans-serif;
+          font-size: 14px;
+          font-weight: 600;
+          margin: 3px 0px;
+        }
+        input {
+          width: 450px;
+        }
+      }
+    }
+    #form--btn {
+      button {
+        width: 450px;
+        height: 48px;
+        margin: 20px 0px;
+        background-color: var(--form-btn-bg-color);
+        border: none;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Sofia Sans", sans-serif;
+        font-size: 20px;
+        color: #ffffff;
+      }
+
+      p {
+        font-family: "Sofia Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 3px 0px;
+        color: var(--txt-header-color);
+        justify-content: center;
+
+        a {
+          color: var(--txt--accent);
+          text-decoration: none;
+          padding: 0px 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  body {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bdy--one {
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    .container {
+      .container--img {
+        margin-top: 5px;
+        margin-left: 10px;
+      }
+      .container--txt {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        #title {
+        }
+        #main-1 {
+          display: none;
+        }
+        #main-2 {
+          display: block;
+          font-size: 16px;
+          justify-content: flex-start;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .bdy--two {
+    width: 330px;
+    height: auto;
+    margin: 20px 0px;
+    margin-left: 20px;
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      border: none;
+      background-color: var(--body-bg-color);
+
+      .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80%;
+        gap: 10px;
+        margin: 0px 0px;
+
+        #act-lvl {
+          #group {
+            select {
+              width: 290px;
+            }
+          }
+        }
+        #pw {
+          #group {
+            input {
+              width: 290px;
+            }
+          }
+        }
+        #form--btn {
+          margin: 0px 0px;
+          margin-left: 20px;
+          button {
+            width: 285px;
+            height: 48px;
+          }
+          p {
+            font-size: 14px;
+            text-align: center;
+          }
+        }
+        .form--group {
+          flex-direction: column;
+
+          #group {
+            margin: 0px 0px;
+            margin-left: 10px;
+            #gender {
+              width: 290px;
+            }
+            label {
+              font-family: "Sofia Sans", sans-serif;
+              font-size: 14px;
+              margin: 3px 0px;
+            }
+            input {
+              width: 290px;
+              height: 50px;
+              border-radius: 3px;
+              border: 1px solid var(--form-border-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}

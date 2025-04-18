@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/ico.png" type="image/png" />
+  <link rel="stylesheet" href="index.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WP Pusher</title>
+</head>
+
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo--container">
+        <img src="./assets/logo.png" alt="WP PUSHER" />
+      </div>
+
+      <ul class="links">
+        <li id="link">Download</li>
+        <li id="link">Learn More</li>
+        <li id="link">Pricing</li>
+        <li id="link">Help</li>
+        <li id="link">
+          <button class="nav--btn">Account</button>
+        </li>
+      </ul>
+    </div>
+    <div class="nav--border"></div>
+  </header>
+
+  <section class="form">
+    <div class="form--container">
+      <div id="content--main">
+        <div id="title">
+          <p>Checkout</p>
+        </div>
+
+        <form action="">
+          <div class="form--group" id="basic--info">
+            <div class="title--container">
+              <div class="description">1</div>
+              <div id="title--txt">Basic Information</div>
+            </div>
+
+            <div class="groups">
+              <div id="group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="John" />
+              </div>
+              <div id="group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Doe" />
+              </div>
+            </div>
+            <div id="group" class="email">
+              <label for="email">E-mail</label> <br />
+              <input type="email" id="mail" name="email" placeholder="janedoe@example.com" />
+            </div>
+          </div>
+
+          <div class="form--border"></div>
+          <div class="form--group" id="payment--info">
+            <div class="title--container">
+              <div class="description">2</div>
+              <div id="title--txt">Payment Information</div>
+            </div>
+
+            <div id="group" class="card--container">
+              <label for="credit-card">Credit Card</label>
+              <div class="card-info">
+                <input type="text" name="card-number" placeholder="Card Number" id="card-input" maxlength="19"
+                  inputmode="numeric" />
+                <input type="text" name="expiry" placeholder="MM / YY" id="expiry-input" maxlength="7"
+                  inputmode="numeric" />
+                <input type="text" name="cvc" placeholder="CVC" id="cvc-input" maxlength="4" inputmode="numeric" />
+              </div>
+            </div>
+          </div>
+          <div class="form--border"></div>
+          <div class="form--btn">
+            <button>Buy WP Pusher</button>
+            <div id="btn--txt">
+              <div class="ico">?</div>
+              <p>Need any help? Don't hesitate to contact support!</p>
+            </div>
+            <div id="btn--ad">
+              <img src="./assets/powered_by_stripe.png" alt="?">
+            </div>
+          </div>
+
+      </div>
+
+      </form>
+      <div id="content--side">
+        <div class="content--container">
+          <div class="block" id="block1">
+            <div id="title">
+              <p>Freelancer</p>
+            </div>
+            <div id="pricing">
+              <div id="big">
+                <p>$</p>
+                <h2>99</h2>
+              </div>
+
+              <p id="small">
+                /year
+              </p>
+            </div>
+
+            <div id="txt">Automatically renews after 1 year</div>
+          </div>
+          <div class="block" id="block2">
+            <div class="item">
+              <div class="circle">
+                ✔
+              </div>
+              <p>Use on <b>5</b> client sides</p>
+            </div>
+            <div class="item">
+              <div class="circle">
+                ✔
+              </div>
+
+              <p>Private repositories</p>
+            </div>
+            <div class="item">
+              <div class="circle">
+                ✔
+              </div>
+              <p>Email support</p>
+            </div>
+          </div>
+          <div class="block" id="block3">
+            <div id="first">
+              <p>Need <b>20</b> client sites?</p>
+            </div>
+            <div id="second">
+              <b>Switch to the <i>Agency</i> Plan</b>
+            </div>
+
+          </div>
+          <div class="block" id="block4">
+            <div class="border">
+            </div>
+
+            <div class="content">
+              <div id="txt">
+                <i>
+                  FTP is horrible to deal with. <br><b> WP Pusher</b> solves that issue, and the customer support is
+                  awesome!
+                </i>
+              </div>
+              <div id="img">
+                <img src="./assets/profile.png" alt="Founder of WP Pusher" />
+                <p>
+                  Kirk Beard
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+    <footer>
+      <p>© 2018 WP Pusher IVS · <a href="#"> Terms of Service.</a></p>
+    </footer>
+  </section>
+</body>
+
+</html>
