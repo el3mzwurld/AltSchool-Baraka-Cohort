@@ -86,7 +86,7 @@ updateCart = () => {
     //create .content div
     const content = document.createElement("div");
     content.classList.add("content");
-
+    //Add inner HTML TO content div
     content.innerHTML = ` <div class="order">
         <p>${item}</p>
         <div class="order--price">
